@@ -13,4 +13,6 @@ import { EventsAppComponent } from './events-app.component';
   providers: [],
   bootstrap: [EventsAppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  pageTitle: string = 'asd';
+ }
