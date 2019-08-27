@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -7,4 +7,10 @@ import { Component, Input } from '@angular/core';
 })
 export class EventThumnailComponent {
     @Input() event: any;
+    @Output() eventClick = new EventEmitter();
+
+    handleClickMe() : void {
+        console.log('clicked !');
+        this.eventClick.emit('foo');
+    }
 }
