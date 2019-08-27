@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
         templateUrl: './event-thumnail.component.html'
 })
 export class EventThumnailComponent {
-    event: any;
+    @Input() event: any;
 }
