@@ -4,10 +4,29 @@ import { Component } from '@angular/core';
     selector: 'events-list',
     template: `
         <div>
-            <h1>Upcomming Angular Events</h1>
-            <hr>
-            <h2>{{event.name}}</h2>
+        <img [src]="event?.imageUrl" [alt]="event?.name">
+    
+        <div class="row">
+        <div class="col-md-11">
+            <h2>{{event?.name}} </h2>
         </div>
+        </div>
+    
+        <div class="row">
+        <div class="col-md-6">
+            <div><strong>Date:</strong> {{event?.date}}</div>
+            <div><strong>Time:</strong> {{event?.time}}</div>
+            <div><strong>Price:</strong> \${{event?.price}}</div>
+        </div>
+        <div class="col-md-6">
+            <address>
+            <strong>Address:</strong><br />
+            {{event?.location?.address}}<br />
+            {{event?.location?.city}}, {{event?.location?.country}}
+            </address>
+        </div>
+        </div>
+    </div>
     `
 })
 export class EventListComponent {
