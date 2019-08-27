@@ -24,4 +24,5 @@ export class EventListComponent {
     handleEventClicked(data) : void {
         console.log('received data : '+ data);
     }
+    
 }

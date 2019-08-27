@@ -8,9 +8,14 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class EventThumnailComponent {
     @Input() event: any;
     @Output() eventClick = new EventEmitter();
+    someProperty: any = "mozk property";
 
     handleClickMe() : void {
         console.log('clicked !');
-        this.eventClick.emit('foo');
+        this.eventClick.emit(this.event.name);
+    }
+
+    logFoo(): void {
+        console.log('mozk');
     }
 }
