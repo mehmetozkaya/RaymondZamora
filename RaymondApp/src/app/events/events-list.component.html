@@ -5,8 +5,5 @@
         <div *ngFor="let event of events" class="col-md-5">
             <event-thumnail #thumnail  [event]="event" (eventClick)="handleEventClicked($event)"></event-thumnail>
         </div>
-    </div>
-    
-    <h3>{{thumnail.someProperty}}</h3>
-    <button class="btn btn-primary" (click)="thumnail.logFoo()">Log me some foo</button>
+    </div>        
 </div>

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class EventService {
-    getEvents() {
+    getEvents(): any[] {
         return EVENTS;
     }
 }
