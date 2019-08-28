@@ -3,7 +3,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
         selector: 'event-thumnail',
-        templateUrl: './event-thumnail.component.html'
+        templateUrl: './event-thumnail.component.html',
+        styles: ['']
 })
 export class EventThumnailComponent {
     @Input() event: any;
