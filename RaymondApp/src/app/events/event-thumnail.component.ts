@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
         selector: 'event-thumnail',
         templateUrl: './event-thumnail.component.html',
-        styles: ['']
+        styles: ['.green {color: #003300 !important; }']
 })
 export class EventThumnailComponent {
     @Input() event: any;

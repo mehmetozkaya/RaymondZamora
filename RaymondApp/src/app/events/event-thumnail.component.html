@@ -11,7 +11,7 @@
     <div class="col-md-6">
         <div><strong>Date:</strong> {{event?.date}}</div>
         
-        <div [ngSwitch]="event?.time">
+        <div [class.green]="event?.time === '8:00 am'" [ngSwitch]="event?.time">
             <strong>Time:</strong> {{event?.time}}
             <span *ngSwitchCase="'8:00 am'">(Early Start)</span>
             <span *ngSwitchCase="'10:00 am'">(Late Start)</span>
