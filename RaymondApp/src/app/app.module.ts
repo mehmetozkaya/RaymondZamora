@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { EventsAppComponent } from './events-app.component';
 import { EventListComponent } from './events/events-list.component';
 import { EventThumnailComponent } from './events/event-thumnail.component';
+import { NavBarComponent } from './nav/navbar.component';
 
 @NgModule({ 
   imports: [
@@ -12,7 +13,8 @@ import { EventThumnailComponent } from './events/event-thumnail.component';
   declarations: [
     EventsAppComponent,
     EventListComponent,
-    EventThumnailComponent
+    EventThumnailComponent,
+    NavBarComponent
   ],
   providers: [],
   bootstrap: [EventsAppComponent]
