@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { IEvent } from './shared';
 
 
 @Component({
@@ -7,9 +8,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
         styles: ['.green {color: #003300 !important; }']
 })
 export class EventThumnailComponent {
-    @Input() event: any;
-    @Output() eventClick = new EventEmitter();
-    someProperty: any = "mozk property";
+    @Input() event: IEvent;
+    @Output() eventClick = new EventEmitter();    
 
     handleClickMe() : void {
         console.log('clicked !');

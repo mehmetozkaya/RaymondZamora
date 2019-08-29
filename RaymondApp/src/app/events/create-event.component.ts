@@ -7,7 +7,6 @@ import { Router } from '@angular/router';
 export class CreateEventComponent {
 
     constructor(private router: Router){
-
     }
 
     cancel(): void {
