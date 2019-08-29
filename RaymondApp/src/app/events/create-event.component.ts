@@ -11,6 +11,6 @@ export class CreateEventComponent {
     }
 
     cancel(): void {
-        this.router.navigate(['./events']);
+        this.router.navigate(['/events']);
     }
 }
