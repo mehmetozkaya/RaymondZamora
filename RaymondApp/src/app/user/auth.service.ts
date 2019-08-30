@@ -13,4 +13,8 @@ export class AuthService {
             lastName: 'Ozkaya'
         }
     }
+
+    isAuthenticated() {
+        return !!this.currentUser;
+    }
 }
