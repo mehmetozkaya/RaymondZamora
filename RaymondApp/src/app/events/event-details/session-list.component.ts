@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ISession } from './shared';
-
+import { ISession } from '../shared';
 
 @Component({
     selector: 'session-list',
