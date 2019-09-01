@@ -9,12 +9,17 @@ import { IEvent } from '../shared';
 })
 export class EventDetailsComponent implements OnInit {
     event: IEvent
-
+    addMode: boolean
+    
     constructor(private eventService: EventService, private route: ActivatedRoute) {
     }
 
     ngOnInit() {
         let id = +this.route.snapshot.params['id'];
         this.event = this.eventService.getEvent(id);        
+    }
+    
+    addSession() {
+        this.addMode = true
     }
 }
