@@ -21,7 +21,7 @@ export class EventDetailsComponent implements OnInit {
         this.event = this.eventService.getEvent(id);        
     }
     
-    addSession() {
+    addSession() : void {
         this.addMode = true
     }
 
