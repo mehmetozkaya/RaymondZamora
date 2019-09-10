@@ -6,7 +6,6 @@ import { AuthService } from '../user/auth.service';
     templateUrl: './navbar.component.html'
 })
 export class NavBarComponent {
-    constructor(private authService: AuthService){
-        
+    constructor(private authService: AuthService){        
     }
 }

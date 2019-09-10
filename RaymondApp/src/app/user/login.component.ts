@@ -9,9 +9,6 @@ export class LoginComponent {
     
     constructor(private authService: AuthService, private router: Router){
     }
-
-    // userName
-    // password    
     
     login(formValues) {
         this.authService.loginUser(formValues.userName, formValues.password)
