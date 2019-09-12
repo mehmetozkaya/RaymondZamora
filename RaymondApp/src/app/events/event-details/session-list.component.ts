@@ -17,7 +17,7 @@ export class SessionListComponent implements OnChanges {
             this.filterSessions(this.filterBy);
             this.sortBy === 'name' ? this.visibleSessions.sort(sortByNameAsc) : this.visibleSessions.sort(sortByVotesDesc)
         }
-    }     
+    }
 
     filterSessions(filterBy: string): void {
         if(filterBy === 'all') {
@@ -26,7 +26,6 @@ export class SessionListComponent implements OnChanges {
             this.visibleSessions = this.sessions.filter(session => {return session.level.toLocaleLowerCase() === filterBy; })
         }
     }
-    
 }
 
 function sortByNameAsc(s1: ISession, s2: ISession) {
