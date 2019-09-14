@@ -30,17 +30,17 @@ export class EventService {
         {
           var matchingSessions = event.sessions.filter(session => session.name.toLocaleLowerCase().indexOf(term) > -1)
           matchingSessions = matchingSessions.map((session:any) => {
-            session.eventId = event.id
-            return session
+            session.eventId = event.id;
+            return session;
           })
-          results = results.concat(matchingSessions)
+          results = results.concat(matchingSessions);
         })
 
         var emitter = new EventEmitter(true)
         setTimeout(() => {
-          emitter.emit(results)
+          emitter.emit(results);
         }, 100)
-        return emitter
+        return emitter;
     }
 }
 
