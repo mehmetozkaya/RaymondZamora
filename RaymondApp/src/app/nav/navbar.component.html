@@ -42,10 +42,10 @@
     </div>
   </div>
 
-  <modal>
+  <simple-modal title="Matching Sessions">
     <div class="list-group">
-      <a class="list-group-item" *ngFor="let session of foundSessions" [routerLink]="['events', session.eventId]">
+      <a class="list-group-item" *ngFor="let session of foundSessions" [routerLink]="['/events', session.eventId]">
         {{session.name}}
       </a>
     </div>
-  </modal>
+  </simple-modal>
