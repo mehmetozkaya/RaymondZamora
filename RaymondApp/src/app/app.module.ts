@@ -21,7 +21,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SessionListComponent } from './events/event-details/session-list.component';
 import { CollapsibleWellComponent } from './common/collapsible-well.component';
 import { DurationPipe } from './events/shared/duration.pipe';
+import { JQ_TOKEN } from './common/index'
 
+//let toastr: Toastr = window['toastr']
+let jQuery = window['$']
 
 @NgModule({ 
   imports: [
