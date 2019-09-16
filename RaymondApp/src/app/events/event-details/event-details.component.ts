@@ -19,8 +19,9 @@ export class EventDetailsComponent implements OnInit {
     ngOnInit() {
         this.route.params.forEach((params: Params) => {
             let id = +params['id'];
-            this.event = this.eventService.getEvent(id);    
-        })        
+            this.event = this.eventService.getEvent(id);
+            this.addMode = false;
+        })
     }
     
     addSession() : void {
