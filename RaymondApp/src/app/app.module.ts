@@ -21,7 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SessionListComponent } from './events/event-details/session-list.component';
 import { CollapsibleWellComponent } from './common/collapsible-well.component';
 import { DurationPipe } from './events/shared/duration.pipe';
-import { JQ_TOKEN } from './common/index'
+import { JQ_TOKEN, SimpleModalComponent } from './common/index'
 
 //let toastr: Toastr = window['toastr']
 let jQuery = window['$']
@@ -43,10 +43,12 @@ let jQuery = window['$']
     Error404Component,
     SessionListComponent,
     CollapsibleWellComponent,
-    DurationPipe
+    DurationPipe,
+    SimpleModalComponent
   ],
   providers: [
     EventService, 
+    { provide: JQ_TOKEN, useValue: jQuery },
     ToastrService, 
     EventRouteActivator,
     AuthService
