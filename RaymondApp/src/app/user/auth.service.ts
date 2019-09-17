@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IUser } from './user.model';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable()
 export class AuthService {
@@ -34,6 +34,11 @@ export class AuthService {
     updateCurrentUser(firstName: string, lastName: string) {
         this.currentUser.firstName = firstName
         this.currentUser.lastName = lastName
+    }
+
+    logout() {
+        let options = { headers: new HttpHeaders({'Content-Type': 'application/json'})}
+        return this.http.post('/api/logout', {}, options)
     }
    
 }
