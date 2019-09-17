@@ -1,10 +1,15 @@
 import { Injectable } from '@angular/core';
 import { IUser } from './user.model';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AuthService {
  
     currentUser: IUser
+
+    constructor(private http: HttpClient) {
+
+    }
 
     loginUser(userName: string, password: string) {
         this.currentUser = {
@@ -13,6 +18,8 @@ export class AuthService {
             firstName: 'Mehmet',
             lastName: 'Ozkaya'
         }
+
+        // this.http.post('api/login')
     }
 
     isAuthenticated() {
