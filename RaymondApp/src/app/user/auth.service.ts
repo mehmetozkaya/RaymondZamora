@@ -19,7 +19,8 @@ export class AuthService {
             lastName: 'Ozkaya'
         }
 
-        // this.http.post('api/login')
+        // let loginInfo = { userName: userName, password: password }
+        // this.http.post('api/login', loginInfo)
     }
 
     isAuthenticated() {
