@@ -24,6 +24,7 @@ import { SessionListComponent } from './events/event-details/session-list.compon
 import { CollapsibleWellComponent } from './common/collapsible-well.component';
 import { DurationPipe } from './events/shared/duration.pipe';
 import { JQ_TOKEN, SimpleModalComponent, ModalTriggerDirective } from './common/index'
+import { CustomerModule } from './customer/customer.module';
 
 //let toastr: Toastr = window['toastr']
 let jQuery = window['$']
@@ -34,7 +35,8 @@ let jQuery = window['$']
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    CustomerModule
   ],
   declarations: [
     EventsAppComponent,
