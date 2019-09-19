@@ -25,6 +25,7 @@ import { CollapsibleWellComponent } from './common/collapsible-well.component';
 import { DurationPipe } from './events/shared/duration.pipe';
 import { JQ_TOKEN, SimpleModalComponent, ModalTriggerDirective } from './common/index'
 import { CustomerModule } from './customer/customer.module';
+import { CustomerComponent } from './customer/customer.component';
 
 //let toastr: Toastr = window['toastr']
 let jQuery = window['$']
@@ -59,7 +60,7 @@ let jQuery = window['$']
     EventRouteActivator,
     AuthService
   ],
-  bootstrap: [EventsAppComponent]
+  bootstrap: [EventsAppComponent]  
 })
 export class AppModule {
   pageTitle: string = 'asd';
