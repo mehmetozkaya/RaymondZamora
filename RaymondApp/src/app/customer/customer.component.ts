@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./customer.component.css']
 })
 export class CustomerComponent implements OnInit {
-
+  customer: any
   constructor() { }
 
   ngOnInit() {
+    this.customer = {
+      name: 'Mehmet Ozkaya',
+      address: {
+        city: 'Istanbul'
+      }
+    }
   }
 
 }
